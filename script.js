@@ -1,20 +1,19 @@
-var randomNum;
+
 var input=parseInt(document.getElementById("guess").value);
-function randomNumGenerator(){
+ var numP=document.getElementById("num");
+var res=document.getElementById("respond");
+function randomNumGen(){
 	 //generate random number
-	randomNum = Math.floor(Math.random()*41) - 20;
+var	randomNum = Math.floor(Math.random()*41) - 20;
 	 //show random number
-	document.getElementById("num").innerText = randomNum;
+	numP.innerText = randomNum;
 	
-	//convert input into number
-	input =guesss ;	
-	
-    //check differnce and print
+  //check differnce and print
 	if(Math.abs(randomNum - input) <= 5){
-		document.getElementById("respond").innerText = "Hot";
+		res.innerText = "Hot";
 	}
 	else{
-		document.getElementById("respond").innerText = "Cold";
+		res.innerText = "Cold";
 	}
 }
 
