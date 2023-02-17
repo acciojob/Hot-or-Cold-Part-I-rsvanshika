@@ -1,6 +1,5 @@
 var randomNum;
-var input;
-var guesss=parseInt(document.getElementById("guess").value);
+var input=parseInt(document.getElementById("guess").value);
 function randomNumGenerator(){
 	 //generate random number
 	randomNum = Math.floor(Math.random()*41) - 20;
