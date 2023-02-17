@@ -1,5 +1,6 @@
 var randomNum;
 var input;
+var guesss=parseInt(document.getElementById("guess").value);
 function randomNumGenerator(){
 	 //generate random number
 	randomNum = Math.floor(Math.random()*41) - 20;
@@ -7,7 +8,7 @@ function randomNumGenerator(){
 	document.getElementById("num").innerText = randomNum;
 	
 	//convert input into number
-	input = parseInt(document.getElementById("guess").value);	
+	input =guesss ;	
 	
     //check differnce and print
 	if(Math.abs(randomNum - input) <= 5){
